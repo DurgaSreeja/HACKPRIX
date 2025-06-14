@@ -26,9 +26,9 @@ const io = new Server(httpServer, {
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // Frontend URL
+    origin: "http://localhost:5173",
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
-    credentials: true, // Include credentials like cookies if needed
+    credentials: true,
   })
 );
 
