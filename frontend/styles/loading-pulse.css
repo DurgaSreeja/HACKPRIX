@@ -1,0 +1,21 @@
+@keyframes pulse {
+  0% {
+    stroke-dasharray: 0 1500;
+    opacity: 1;
+  }
+  50% {
+    stroke-dasharray: 750 1500;
+    opacity: 0.75;
+  }
+  100% {
+    stroke-dasharray: 1500 1500;
+    opacity: 1;
+  }
+}
+
+.pulse {
+  stroke: url(#strokeGradient);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  animation: pulse 2s ease-in-out infinite;
+}
